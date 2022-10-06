@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/LinearLayout">
+
+        <ImageView
+            android:layout_margin="30dp"
+            android:id="@+id/imgfoto"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/g1"/>
+
+        <TextView
+            android:layout_margin="30dp"
+            android:textStyle="bold"
+            android:id="@+id/txtinformacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Foto 1"
+            android:textSize="20sp"
+            android:paddingLeft="10dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btfoto1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/LinearLayout"
+        android:text="Exibir foto 1"
+        android:background="@drawable/roundedbuttons"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exibir foto 2"
+            android:id="@+id/btfoto2"
+            android:layout_below="@+id/btfoto1"
+            android:layout_margin="20dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/roundedbuttons"
+            />
+</RelativeLayout>
